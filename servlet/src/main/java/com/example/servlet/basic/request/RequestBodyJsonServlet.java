@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 @WebServlet(name = "requestBodyJsonServlet", urlPatterns = "/request-body-json")
 public class RequestBodyJsonServlet extends HttpServlet {
 
-    private ObjectMapper objectMapper =  new ObjectMapper(); //JSON 결과를 파싱해서 사용할 수 있는 자바 객체로 변환 
+    private ObjectMapper objectMapper =  new ObjectMapper(); //JSON 결과를 파싱해서 사용할 수 있는 자바 객체로 변환
 
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
